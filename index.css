@@ -262,8 +262,9 @@ footer {
 footer .footerImage {
   background: url(assets/footer_img.jpg);
   box-sizing: border-box;
-  background-position: 1% 25%;
+  background-position: 1% 20%;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 15vh;
 }
 
