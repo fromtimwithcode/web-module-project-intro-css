@@ -161,6 +161,14 @@ header nav a {
   width: 7rem;
 }
 
+header nav a:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
 header nav a:first-child {
   margin-left: 10%;
 }
@@ -222,6 +230,7 @@ main .mainContainer {
   color: white;
   font-family: "Roboto Mono", monospace;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 main section {
@@ -229,6 +238,7 @@ main section {
   margin: 0 auto;
   padding: 2rem;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
 }
 
 main img {
@@ -285,6 +295,14 @@ footer nav a {
   width: 7rem;
 }
 
+footer nav a:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
 footer nav a:first-child {
   margin-left: 10%;
 }
@@ -302,4 +320,20 @@ footer nav .learnMoreBtn {
 footer nav .getInvolvedBtn {
   background: #ffcd69;
   color: white;
+}
+
+/*
+ * ANIMATION KEYFRAM
+ */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
