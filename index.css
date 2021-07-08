@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Importing Fonts
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@100&display=swap");
+
+/*
+ * HEADER
+ */
+
+header {
+  margin: 1rem auto;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+header nav {
+  display: block;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 10%;
+  border-radius: 1rem;
+  text-decoration: none;
+  width: 7rem;
+}
+
+header nav a:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+header nav a:first-child {
+  margin-left: 10%;
+}
+
+header nav .planVisitBtn {
+  background: #ff764e;
+  color: white;
+}
+
+header nav .learnMoreBtn {
+  background: #5ed3eb;
+  color: white;
+}
+
+header nav .getInvolvedBtn {
+  background: #ffcd69;
+  color: white;
+}
+
+#headerImage {
+  width: 15rem;
+  border-radius: 15rem;
+  margin-left: 2rem;
+}
+
+.headerContainer {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  display: inline-block;
+  font-family: "Chelsea Market", cursive;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+h2,
+h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/*
+ * MAIN
+ */
+
+main .mainContainer {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #ddb9a3;
+  width: 90%;
+  padding: 1rem;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+main section {
+  width: 30%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+main img {
+  margin: 0 auto;
+  display: block;
+  width: 35%;
+}
+
+main p {
+  margin: 0 auto;
+  display: block;
+  padding: 1rem;
+  line-height: 1.2;
+}
+
+.fireRestrictions,
+.entranceFee {
+  font-weight: bold;
+}
+
+/*
+ * FOOTER
+ */
+
+footer {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  background: #f9e7dc;
+}
+
+footer .footerImage {
+  background: url(assets/footer_img.jpg);
+  box-sizing: border-box;
+  background-position: 1% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15vh;
+}
+
+footer nav {
+  margin: 0 auto;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 100%;
+}
+
+footer nav a {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 10%;
+  border-radius: 1rem;
+  text-decoration: none;
+  width: 7rem;
+}
+
+footer nav a:hover {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+footer nav a:first-child {
+  margin-left: 10%;
+}
+
+footer nav .planVisitBtn {
+  background: #ff764e;
+  color: white;
+}
+
+footer nav .learnMoreBtn {
+  background: #5ed3eb;
+  color: white;
+}
+
+footer nav .getInvolvedBtn {
+  background: #ffcd69;
+  color: white;
+}
+
+/*
+ * ANIMATION KEYFRAM
+ */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
